@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kala-azar-multipatch"
+version = "1.0.0"
+description = "Multi-patch host-vector epidemic model for Kala-azar in Bihar with residence-time mobility coupling and spectral vector-control allocation"
+readme = "README.md"
+authors = [
+    { name = "Raj Kumar Raj" },
+    { name = "Sandeep Suman", email = "ssumantmbu@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["multipatch*"]

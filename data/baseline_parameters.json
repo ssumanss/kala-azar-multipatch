@@ -1,0 +1,68 @@
+{
+  "model": "Multi-patch host-vector Kala-azar transmission model (Bihar, India)",
+  "dimension": 25,
+  "infected_dimension": 10,
+  "districts": [
+    {
+      "index": 1,
+      "name": "Muzaffarpur",
+      "population_NH": 4800000.0,
+      "vector_ratio_nF": 4.5,
+      "recovery_rate_rH": 0.005555555555555556,
+      "isolated_R0": 2.4566904092090844
+    },
+    {
+      "index": 2,
+      "name": "Saran",
+      "population_NH": 3900000.0,
+      "vector_ratio_nF": 3.2,
+      "recovery_rate_rH": 0.005555555555555556,
+      "isolated_R0": 2.0716632530644805
+    },
+    {
+      "index": 3,
+      "name": "Patna",
+      "population_NH": 5800000.0,
+      "vector_ratio_nF": 1.2,
+      "recovery_rate_rH": 0.011111111111111112,
+      "isolated_R0": 0.9093799116818513
+    },
+    {
+      "index": 4,
+      "name": "Bhagalpur",
+      "population_NH": 3000000.0,
+      "vector_ratio_nF": 2.0,
+      "recovery_rate_rH": 0.006666666666666667,
+      "isolated_R0": 1.501847453854048
+    },
+    {
+      "index": 5,
+      "name": "Munger",
+      "population_NH": 1400000.0,
+      "vector_ratio_nF": 0.8,
+      "recovery_rate_rH": 0.008333333333333333,
+      "isolated_R0": 0.8534456884578
+    }
+  ],
+  "biological_parameters": {
+    "a_biting_rate_day": 0.25,
+    "b_H_vector_to_human_transmission": 0.15,
+    "b_V_human_to_vector_transmission": 0.15,
+    "d_V_vector_mortality_day": 0.07142857142857142,
+    "d_H_human_natural_mortality_day": 3.913894324853229e-05,
+    "mu_H_human_birth_rate_day": 3.913894324853229e-05,
+    "delta_H_disease_induced_mortality_day": 0.00027397260273972606
+  },
+  "baseline_residence_mobility_matrix_P": [
+    [0.86, 0.03, 0.08, 0.01, 0.02],
+    [0.03, 0.88, 0.07, 0.01, 0.01],
+    [0.04, 0.03, 0.87, 0.03, 0.03],
+    [0.01, 0.01, 0.06, 0.87, 0.05],
+    [0.02, 0.01, 0.07, 0.06, 0.84]
+  ],
+  "spectral_thresholds": {
+    "network_R0": 2.195901083268525,
+    "collatz_wielandt_lower_bound": 0.7982,
+    "collatz_wielandt_upper_bound": 2.3291
+  }
+}
